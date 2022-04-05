@@ -6,5 +6,5 @@ int main(void)
 {
 
     cout << "hola" << endl;
-    cout << "CHAUCIT)O!" << endl;
+    cout << "=======================INICIO DEL PROGRAMA===================================" << endl;
 }
