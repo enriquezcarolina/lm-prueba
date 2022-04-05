@@ -4,11 +4,14 @@ using namespace std;
 
 int main(void)
 {
-
-    cout << "hola" << endl;
+    char buf[100];
+    
+    FILE *fd;
+  
     cout << "=======================INICIO DEL PROGRAMA===================================" << endl;
-    fd = fopen(“textito.txt”, “r”);
-    fread(puf, tam, fd);
+    fd = fopen("textito.txt", "r+t");
+    fread(buf, 100,1, fd);
+    printf("%s",buf); 
     fclose(fd);
-
+    cout << "=======================FIN DEL PROGRAMA===================================" << endl;
 }
