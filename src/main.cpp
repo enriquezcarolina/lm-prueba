@@ -44,12 +44,13 @@ int main(void)
     Cuenta_Accesos();
     cout << "\nCuenta accesos debe decir 4 y dice: " << Cuenta_Accesos() << endl;
     uint16_t var_global= Cuenta_Accesos();
-    
+
     cout << "=======================FIN DEL PROGRAMA===================================" << endl;
 
    
 
 }
+
 
 
 
