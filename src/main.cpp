@@ -1,7 +1,7 @@
 #include <iostream>
 #include "matematica.c"
 using namespace std;
-int32_t Sumar_Array (int16_t* x, int16_t xn);
+
 int main(void)
 {
     char buf[100];
@@ -32,23 +32,25 @@ int main(void)
 
     cout << "\n=======================PRUEBA EJERCICIO 4===================================" << endl;
     
-    cout << "\nResultado es= " << Multiplicar_Sat (33000, 2) << endl;
-    cout << "\nResultado es= " << Multiplicar_Sat (2, 2) << endl;
-    cout << "\nResultado es= " << Multiplicar_Sat (33000, 1) << endl;
-
-
-    cout << "\n=======================PRUEBA EJERCICIO 5===================================" << endl;
-
-     cout << "\nResultado es= " << Multiplicar_inline (33000, 2) << endl;
+    cout << "\nResultado es= " << Multiplicar_inline (33000, 2) << endl;
     cout << "\nResultado es= " << Multiplicar_inline (2, 2) << endl;
     cout << "\nResultado es= " << Multiplicar_inline (33000, 1) << endl;
 
+    cout << "\n=======================PRUEBA EJERCICIO 5===================================" << endl;
 
+   
+    cout << "\nCuenta accesos debe decir 1 y dice: " << Cuenta_Accesos() << endl;
+    Cuenta_Accesos();
+    Cuenta_Accesos();
+    cout << "\nCuenta accesos debe decir 4 y dice: " << Cuenta_Accesos() << endl;
+    uint16_t var_global= Cuenta_Accesos();
+    
     cout << "=======================FIN DEL PROGRAMA===================================" << endl;
 
    
 
 }
+
 
 
 

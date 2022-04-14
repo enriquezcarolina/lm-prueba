@@ -41,3 +41,19 @@ inline int16_t Multiplicar_inline (int16_t op1, int16_t op2)
 
  return(result);
 }
+
+/*Ejercicio 5: Agregar una función que devuelva un entero sin signo de 16 bits que me permita contar la
+cantidad de veces que fue llamada la misma. 
+
+Comprobar el lugar de memoria que ocupan cada una de las variables creadas en el mapa general. 
+
+Realizar una rutina en el programa principal que me permita comprobar su funcionamiento
+guardando los valores en una variable global. Comprobar la dirección donde se guarda dicha
+variable.*/
+
+static uint16_t Contar_llamados=0;
+uint16_t Cuenta_Accesos (void)
+{
+     Contar_llamados++;
+     return Contar_llamados;
+}
